@@ -7,13 +7,15 @@
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-<nav class="navbar navbar-top header" style="background-color:#8FC0A9">
+<nav class="navbar navbar-top header" id="header-footer">
   <div class="col-md-12">
         <div class="navbar-header">
             <a href="index.php" ><img src="images/GRX-DEV.gif" width="160" height="90" alt="DreamGarden" style="margin-top:5%"></a>
@@ -23,8 +25,7 @@
       
         </div>
         <!-- Logeo -->
-        <div class="container" style="border:1px solid black;width:370px; margin-bottom:-0.5%;margin-right:-0.75%; margin-top:3%;
-        background-color:#C8D5B9">
+        <div class="container" id="login">
         <p>
           <form style="margin-top:0.5%">
             Usuario:
@@ -40,7 +41,7 @@
 </nav>
 
 
-      <div class="navbar navbar-default" style="margin-top:-20px; border:1px solid black;" > 
+      <div class="navbar navbar-default" id="menu"> 
         <div class="container" >
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,15 +52,15 @@
             </button>
           </div>
           <div class="navbar-collapse collapse" style="width:100%">
-            <ul class="nav navbar-nav ">
-             <li class="active"><a href="#" style="font-size:18px">Inicio</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">¿Necesitas Ayuda?</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Reservar</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Habitaciones</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Promociones</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Servicios</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Opiniones</a></li>
-             <li><a href="#aboutModal" role="button" data-toggle="modal" style="font-size:18px">Información de nosotros</a></li>
+            <ul class="nav navbar-nav " id="lista">
+             <li class="active"><a href="#" >Inicio</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >¿Necesitas Ayuda?</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Reservar</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Habitaciones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Promociones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Servicios</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Opiniones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Información de nosotros</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -69,7 +70,7 @@
 
 <!--main-->
 
- <div class="well" style=" margin-top:-1%;margin-bottom:-2.5%;min-height:600px">
+ <div class="well" id="cuerpo">
  <div class="container">
           <h1 align="center" style="margin-bottom:4%"> Habitaciones</h1>
           <div class="container" style="border:1px solid black">
@@ -77,13 +78,12 @@
 </div>
 </div>
 <!-- Footer -->
-    <div class="navbar navbar-default" style="background-color:#8FC0A9" >
+    <div class="navbar navbar-default" id="header-footer" >
       <div class="col-md-12">
-        <a style="float:left;margin-top:0.3%;margin-bottom:0.3%" href="index.php"><img src="images/GRX-DEV.gif" width="150" height="50" alt="DreamGarden"></a>
-        <p style="float:left; margin-top:1%; margin-left:1%;font-size:17px">Hotel Dream Garden | 876321685-P | C/Pepito frito Nº7 | 958489865 | dreamgarden@hotel.com</p>
+        <a id="imagen-pie" href="index.php"><img src="images/GRX-DEV.gif" width="150" height="50" alt="DreamGarden"></a>
+        <p id="texto-pie" >Hotel Dream Garden | 876321685-P | C/Pepito frito Nº7 | 958489865 | dreamgarden@hotel.com</p>
         </div>
     </div>
-
 
 <!--about modal-->
 <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
