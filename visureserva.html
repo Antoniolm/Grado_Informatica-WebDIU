@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>DreamGarden</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+<nav class="navbar navbar-top header" id="header-footer">
+  <div class="col-md-12">
+        <div class="navbar-header">
+            <a href="index.php" ><img src="images/GRX-DEV.gif" width="160" height="90" alt="DreamGarden" style="margin-top:5%"></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+          <i class="glyphicon glyphicon-search"></i>
+          </button>
+      
+        </div>
+        <!-- Logeo -->
+        <div class="container" id="login">
+        <p>
+          <form style="margin-top:0.5%">
+            Usuario:
+            <input type="text" name="usuario" size="6">
+            Contraseña:
+            <input type="text" name="contrasena"  size="6">
+            <input type="submit" value="Acceder"  size="6">
+          </form>
+          </p>
+          <p style="margin-top:-2%">¿Eres nuevo en nuestra web? <a>Registrate</a></p>
+        </div>
+     </div> 
+</nav>
+
+
+      <div class="navbar navbar-default" id="menu"> 
+        <div class="container" >
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse" style="width:100%">
+            <ul class="nav navbar-nav " id="lista">
+             <li class="active"><a href="#" >Inicio</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >¿Necesitas Ayuda?</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Reservar</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Habitaciones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Promociones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Servicios</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Opiniones</a></li>
+             <li><a href="#aboutModal" role="button" data-toggle="modal" >Información de nosotros</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+
+
+<!--main-->
+
+ <div class="well" id="cuerpo">
+ <div class="container">
+          <h1 align="center" style="margin-bottom:4%"> Visualizar Reserva</h1>
+          <div class="container" style="margin-top:-2%">
+            <h3 align="center" > Datos de la reserva:</h3>
+            <p align="center" style="font-size:19px;margin-top:4%"><Strong>Id reserva:</Strong> p3ks24L6</p>
+            <p align="center" style="font-size:19px;margin-top:4%"><Strong>Fecha desde el</Strong> 14/06/16 <strong> al </strong> 18/06/16</p>
+            <p align="center" style="font-size:19px;margin-top:4%"><Strong>Número de personas:</Strong></p>
+            <p align="center" style="font-size:18px;margin-top:4%"><Strong>Adultos:</Strong>3 <strong style="margin-left:10%">Niños:</strong>0</p>
+            <p align="center" style="font-size:18px;margin-top:4%;margin-left:6%"><Strong>3º Edad:</Strong>2 <strong style="margin-left:10%">Discapacitados*:</strong>0</p>
+            <form align="center" style="margin-top:4%">
+                
+            <input  type="submit" value="Cancelar Reserva" style="height:50px; font-size:19px;width:200px">
+            </form>
+            <p align="center" style="font-size:18px;margin-top:2%"><Strong>*</Strong>Cancelaciones por un periodo menor a 24 horas desde la fecha de reserva.</p>
+           <p align="center" style="font-size:18px">Se cargará en la cuenta la primera noche de estancia</p>
+          </div>
+</div>
+</div>
+<!-- Footer -->
+    <div class="navbar navbar-default" id="header-footer" >
+      <div class="col-md-12">
+        <a id="imagen-pie" href="index.php"><img src="images/GRX-DEV.gif" width="150" height="50" alt="DreamGarden"></a>
+        <p id="texto-pie" >Hotel Dream Garden | 876321685-P | C/Pepito frito Nº7 | 958489865 | dreamgarden@hotel.com</p>
+        </div>
+    </div>
+
+<!--about modal-->
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h2 class="text-center">¿Quiénes somos?</h2>
+      </div>
+      <div class="modal-body">
+          <div class="col-md-12 text-center">
+            <a href="">blablablabla</a>
+            <br><br>
+            
+          </div>
+      </div>
+      <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
+      </div>
+  </div>
+  </div>
+  
+  <!-- script references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
