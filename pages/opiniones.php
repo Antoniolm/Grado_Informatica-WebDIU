@@ -1,35 +1,20 @@
 ﻿<!--main-->
-
+<?php 
+  include 'conexionBD.php';
+  $result=$datos->Query("SELECT * FROM comentario");
+?>
  <div class="well" id="cuerpo">
  <div class="container">
           <h1 align="center" style="margin-bottom:4%"> Opiniones</h1>
           <div class="container" id="contprincipal">
-            <div class="contenedor-scroll">
-
+            <div class="contenedor-scroll" style="padding-bottom:3%">
+                <?php while($fila=mysql_fetch_array($result)){  ?>
                 <div class="comentario">
-                  <p style="margin-top:3%"><strong> Autor:</strong> Usuario <strong style="margin-left:2%">Fecha:</strong>  13/05/2016 <strong style="margin-left:2%"> Valoración:</strong> 1/5</p>
+                  <p style="margin-top:3%"><strong> Autor:</strong> <?php echo $fila['nombre'] ?><strong style="margin-left:2%">Fecha:</strong> <?php echo $fila['fecha'] ?> <strong style="margin-left:2%"> Valoración:</strong> <?php echo $fila['valoracion'] ?>/5</p>
                   <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
+                  <p style="width: 100%"><?php echo $fila['comentario'] ?> </p>
                 </div>
-                <div class="comentario">
-                  <p style="margin-top:3%"><strong> Autor:</strong> Usuario <strong style="margin-left:2%">Fecha:</strong>  13/05/2016 <strong style="margin-left:2%"> Valoración:</strong> 1/5</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                </div>
-                <div class="comentario">
-                  <p style="margin-top:3%"><strong> Autor:</strong> Usuario <strong style="margin-left:2%">Fecha:</strong>  13/05/2016 <strong style="margin-left:2%"> Valoración:</strong> 1/5</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                </div>
+                <?php  } ?>
             </div>
           </div>
             <div class="container">
