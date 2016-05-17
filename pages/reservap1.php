@@ -4,8 +4,8 @@
  <div class="container">
           <h1 align="center" style="margin-bottom:2%"> Reserva</h1>
           <div class="container" style="margin-top:-2%">
-            <h2 align="center"><strong> Datos de la reserva </strong>paso(1/4)</h2>
-            <form align="center" style="margin-left:4%">
+            <h3 align="center"><strong> Datos de la reserva </strong>paso(1/4)</h3>
+            <form align="center" action="index.php?contenido=resep2" method="POST" style="margin-left:4%">
                 <br><br><strong>Fecha:</strong> <input type="date" name="usuario" style="margin-right:4%;margin-left:2%;height:20px" >
                 <input type="date" name="usuario" style="margin-right:4%;margin-left:2%;height:20px" ><br>
                 <p style="margin-top:4%;font-size:19px"> <strong>Nº personas </strong></p>
@@ -45,7 +45,7 @@
                   <option value="5">5</option>
                   <option value="6">6</option>
                 </select></p>
-            <input type="submit" value="Reserva" style="margin-top:2.5%;height:50px; font-size:18px;width:100px">
+                <input type="submit" value="Reserva" style="margin-top:2.5%;height:50px; font-size:18px;width:100px">
             </form>
             <form align="center">
                 <p style="margin-top:4%">¿Tienes ya una reserva?</p>

@@ -16,6 +16,12 @@
                   <input type="checkbox" name="filtro2" value="filtro2"> Desc.por grupo (>10 personas)<br>
                   <input type="checkbox" name="filtro2" value="filtro2"> Fidelidad (usuarios registados)<br>
                 </form>
+                <h4 align="center">Ordenar</h4>
+                <form>
+                  Nombre <input type="radio" name="filtro1" value="filtro1"><br>
+                  Mas baratos <input type="radio" name="filtro1" value="filtro1"><br>
+                  Mas caros <input type="radio" name="filtro1" value="filtro1"><br>
+                </form>
             </div>          
             <div class="container" id="contelem">
                   <?php                

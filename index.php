@@ -12,10 +12,19 @@
   else{
     switch($contenido){
       case 'ayuda':
-        include 'pages/perfil.php';
+        include 'pages/ayuda.php';
         break;
       case 'reserva':
         include 'pages/reservap1.php';
+        break;
+      case 'resep2':
+        include 'pages/reservap2.php';
+        break;
+      case 'resep3':
+        include 'pages/reservap3.php';
+        break;
+      case 'resep4':
+        include 'pages/reservap4.php';
         break;
       case 'habi':
         include 'pages/habitaciones.php';
@@ -37,6 +46,9 @@
         break;
       case 'regis':
         include 'pages/registro.php';
+        break;
+      case 'perfil':
+        include 'pages/perfil.php';
         break;
       case 'datosper':
         include 'pages/datosperso.php';

@@ -15,10 +15,10 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-<nav class="navbar navbar-top header" id="header-footer">
+<nav class="navbar navbar-top header" id="header-footer" style="margin-top:-1%">
   <div class="col-md-12">
         <div class="navbar-header">
-            <a href="index.php" ><img src="images/GRX-DEV.gif" width="160" height="90" alt="DreamGarden" style="margin-top:5%"></a>
+            <a href="index.php?contenido=perfil" ><img src="images/GRX-DEV.gif" width="160" height="90" alt="DreamGarden" style="margin-top:5%"></a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
           <i class="glyphicon glyphicon-search"></i>
           </button>
@@ -27,7 +27,7 @@
         <!-- Logeo -->
         <div class="container" id="login">
         <p>
-          <form style="margin-top:0.5%">
+          <form style="margin-top:0.5%;font-size:13px">
             Usuario:
             <input type="text" name="usuario" size="6">
             Contraseña:
@@ -35,7 +35,7 @@
             <input type="submit" value="Acceder"  size="6">
           </form>
           </p>
-          <p style="margin-top:-2%">¿Eres nuevo en nuestra web? <a href="index.php?contenido=regis">Registrate</a></p>
+          <p style="margin-top:-2%;font-size:13px">¿Eres nuevo en nuestra web? <a href="index.php?contenido=regis">Registrate</a></p>
         </div>
      </div> 
 </nav>
