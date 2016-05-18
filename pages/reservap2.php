@@ -2,7 +2,7 @@
 
  <div class="well" id="cuerpo">
  <div class="container" style="width:100%">
-          <h1 align="center" style="margin-bottom:2%"> Reserva</h1>
+          <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
             <h3 align="center"><strong> Seleccione las habitaciones </strong>paso(2/4)</h3>
@@ -92,13 +92,13 @@
                 </div>
             </div>
           </div>
-          <form>
-          <input type="submit" value="Atras" id="botonp2" style="float:left;"> 
-          <input type="submit" value="Siguiente" id="botonp2" style="float:right;"> 
-          </form>
+          <a href="index.php?contenido=reserva">
+          <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
+          <a href="index.php?contenido=resep3">
+          <input type="submit" value="Siguiente" id="botonp2" style="float:right;"></a>
           </div>
 
-          <div class="container" style="float:left;border-left:1px solid blue;width:20%;min-width:200px;margin-top:-2%">
+          <div class="container" id="recordreserva">
               <h4 align="center"><strong>Contenido de la reserva</strong></h4>
               <p aligh="center" id="parrafo"><Strong>Fecha:</Strong> 16/06/2016-19/06/2016</p>
               <p aligh="center" id="parrafo"><Strong>Nº personas:</Strong></p>

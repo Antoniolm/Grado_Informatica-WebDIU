@@ -8,7 +8,7 @@
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Introduce tus datos personales </strong>paso(4/4)</h3>
+            <h3 align="center"><strong> Introduce los datos de pago</strong>paso(5/5)</h3>
             <div class="container" style="padding-right:0px;padding-left:0px;margin-bottom:2%;min-width:200px;width:100%">
                     <form style="margin-left:4%">
                     <br><br>Nombre:<input type="text" name="usuario" style="margin-right:4%" > 
@@ -30,10 +30,10 @@
                     <p align="center" style="font-size:17px">Si ya tiene cuenta en nuestro sitio web puede acceder a su cuenta desde la zona de logeo.</p>  
                     <p align="center" style="font-size:17px">Puede usted registrarse en nuestro sitio web desde <a href="index.php?contenido=regis">aqui</a></p>
             </div>
-          <a href="index.php?contenido=resep3">
+          <a href="index.php?contenido=resep4">
           <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
-          <a href="index.php?contenido=resep5">
-          <input type="submit" value="Siguiente" id="botonp2" style="float:right;"></a>
+          <a href="index.php?contenido=reserva">
+          <input type="submit" value="Finalizar" id="botonp2" style="float:right;"></a>
           
           </div>
 
@@ -60,8 +60,8 @@
               <div class="container" id="recordelem">
                 <p align="center" id="parrafo2"><strong> Promoción 2</strong></p>
                 <p align="center" id="parrafo2"><strong> Precio/noche:</strong> 192€</p>
-              </div>  
-               <hr style="border:1px solid black">
+              </div> 
+               <hr style="border:1px solid black"> 
           </div>
 
 </div>

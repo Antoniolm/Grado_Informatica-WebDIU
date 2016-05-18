@@ -26,6 +26,9 @@
       case 'resep4':
         include 'pages/reservap4.php';
         break;
+      case 'resep5':
+        include 'pages/reservap5.php';
+        break;
       case 'habi':
         include 'pages/habitaciones.php';
         break;
