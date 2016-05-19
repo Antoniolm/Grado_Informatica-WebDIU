@@ -8,27 +8,37 @@
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Introduce los datos de pago</strong>paso(5/5)</h3>
+            <h3 align="center"><strong> Introduce los datos de pago</strong> paso(5/5)</h3>
             <div class="container" style="padding-right:0px;padding-left:0px;margin-bottom:2%;min-width:200px;width:100%">
-                    <form style="margin-left:4%">
-                    <br><br>Nombre:<input type="text" name="usuario" style="margin-right:4%" > 
-                    Apellidos:<input type="text" name="contrasena" style="margin-right:4%" >
-                    Nacionalidad:
+                    <form align="center" style="margin-left:4%">
+                    <br><br>
+                    <strong style="font-size:19px">Método de pago:</strong>
                     <select style="margin-right: 4%">
-                      <option value="1" selected>España</option>
-                      <option value="2">Francia</option>
-                      <option value="3">Inglaterra</option>
-                      <option value="4">Japon</option>
-                      <option value="5">China</option>
-                      <option value="6">EEUU</option>
+                      <option value="1" selected>Tarjeta</option>
+                      <option value="2">Efectivo</option>
+                    </select><br><br>
+                    <strong style="font-size:19px">Titular de la tarjeta:</strong> <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >
+                                        <strong style="font-size:19px">Tipo de tarjeta:</strong>
+                    <select style="margin-right: 4%">
+                      <option value="1" selected>MasterCard</option>
+                      <option value="2">VISA</option>
+                      <option value="3">Maestro</option>
                     </select>
-                    Teléfono:<input type="text" name="contrasena" style="margin-right:4%" ><br>
-                    Email:<input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >
-                    Verif. email:<input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >
+                    <strong style="font-size:19px">Número de tarjeta:</strong> <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" ><br
+                    ><br><br><br>
+                    <strong style="margin-bottom:-60%;font-size:19px">Caducidad:</strong><br>
+                      <select style="margin-right: 4%" value="mes">
+                      <option value="1" >1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                      <select style="margin-right: 4%" value="año">
+                      <option value="1" >2017</option>
+                      <option value="2">2018</option>
+                      <option value="3">2019</option>
+                    </select>
+                    <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >C.V.C
                 </form>
-                    <h3 align="center" style="margin-top:4%"> O si lo prefiere</h3>
-                    <p align="center" style="font-size:17px">Si ya tiene cuenta en nuestro sitio web puede acceder a su cuenta desde la zona de logeo.</p>  
-                    <p align="center" style="font-size:17px">Puede usted registrarse en nuestro sitio web desde <a href="index.php?contenido=regis">aqui</a></p>
             </div>
           <a href="index.php?contenido=resep4">
           <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>

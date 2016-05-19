@@ -18,10 +18,7 @@
 <nav class="navbar navbar-top header" id="header-footer" style="margin-top:-1%">
   <div class="col-md-12">
         <div class="navbar-header">
-            <a href="index.php?contenido=perfil" ><img src="images/GRX-DEV.gif" width="160" height="90" alt="DreamGarden" style="margin-top:5%"></a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
-          <i class="glyphicon glyphicon-search"></i>
-          </button>
+            <a href="index.php?contenido=perfil" ><img src="images/logo.png" width="270" height="90" alt="DreamGarden" style="margin-top:5%"></a>
       
         </div>
         <!-- Logeo -->
