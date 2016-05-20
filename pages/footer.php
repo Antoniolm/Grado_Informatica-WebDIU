@@ -1,5 +1,5 @@
 ﻿<!-- Footer -->
-    <div class="navbar navbar-default" id="header-footer" >
+    <div class="navbar navbar-default" id="header-footer" style="border:1px solid black">
       <div class="col-md-12">
         <a id="imagen-pie" href="index.php"><img src="images/footer.png" width="100" height="50" alt="DreamGarden"></a>
         <p id="texto-pie" >Hotel Dream Garden | 876321685-P | C/Pepito frito Nº7 | 958489865 | dreamgarden@hotel.com</p>

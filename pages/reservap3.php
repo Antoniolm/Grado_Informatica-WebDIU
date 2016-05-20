@@ -50,8 +50,16 @@
             </div>
           <a href="index.php?contenido=resep2">
           <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
+          <?php 
+              if(empty($_SESSION["usuario"])){ ?>
+          ?>
           <a href="index.php?contenido=resep4">
           <input type="submit" value="Siguiente" id="botonp2" style="float:right;"></a>
+          <?php }
+          else{?>
+          <a href="index.php?contenido=resep5">
+          <input type="submit" value="Siguiente" id="botonp2" style="float:right;"></a>
+          <?php } ?>
           </div>
 
           <div class="container" id="recordreserva" style="font-size:15px">

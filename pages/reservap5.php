@@ -40,8 +40,16 @@
                     <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >C.V.C
                 </form>
             </div>
+          <?php 
+          if(empty($_SESSION["usuario"])){ ?>
+          
           <a href="index.php?contenido=resep4">
           <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
+          <?php }
+          else{?>
+          <a href="index.php?contenido=resep3">
+          <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
+          <?php } ?>  
           <a href="index.php?contenido=reserva">
           <input type="submit" value="Finalizar" id="botonp2" style="float:right;"></a>
           

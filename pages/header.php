@@ -23,17 +23,30 @@
         </div>
         <!-- Logeo -->
         <div class="container" id="login">
-        <p>
-          <form style="margin-top:0.5%;font-size:13px">
-            Usuario:
-            <input type="text" name="usuario" size="6">
-            Contraseña:
-            <input type="text" name="contrasena"  size="6">
-            <input type="submit" value="Acceder"  size="6">
-          </form>
-          </p>
-          <p style="margin-top:-2%;font-size:13px">¿Eres nuevo en nuestra web? <a href="index.php?contenido=regis">Registrate</a></p>
-        </div>
+
+        <?php  session_start();
+              if(empty($_SESSION["usuario"])){ ?>
+            <p style="margin-top:0.5%;font-size:13px">
+              <!-- <form style="margin-top:0.5%;font-size:13px"> -->
+                Usuario:
+                <input type="text" name="usuario" size="6">
+                Contraseña:
+                <input type="text" name="contrasena"  size="6">
+                <a href="pages/iniciosesion.php"><input type="submit" value="Acceder"  size="6"></a>
+              <!-- </form> -->
+              </p>
+              <p style="margin-top:-2%;font-size:13px">¿Eres nuevo en nuestra web? <a href="index.php?contenido=regis">Registrate</a></p>
+          <?php }
+          else {?> 
+             <p style="margin-top:5%;font-size:13px">
+              <!-- <form style="margin-top:0.5%;font-size:13px"> -->
+                Bienvenido , <?php echo $_SESSION["usuario"]; ?>
+                <a href="index.php?contenido=perfil" style="margin-left:2%"><input type="submit" value="perfil"  size="6"></a>
+                <a href="pages/cerrarsesion.php" style="margin-left:2%"><input type="submit" value="Salir"  size="6"></a>
+              <!-- </form> -->
+              </p>
+              <p></p>
+          <?php }?>
      </div> 
 </nav>
 
