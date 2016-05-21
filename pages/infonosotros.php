@@ -22,7 +22,7 @@
     </div>
       <div class="container" id="ofiscerca">
         <h4 align="center"><strong> Of. turismo cercanas: </strong></h4>
-        <ul style="font-size:18px">
+        <ul style="font-size:18px;margin-left: 4%">
         <li>c/falsa 123</li>
         <li>c/mufasa 45</li>
         <li>c/peridista 67</li>

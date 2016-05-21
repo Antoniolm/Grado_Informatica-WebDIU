@@ -8,7 +8,12 @@
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Seleccione las promociones </strong>paso(3/4)</h3>
+            <?php if(empty($_SESSION["usuario"])){ ?>
+              <h3 align="center"><strong> Seleccione las promociones </strong>paso(3/5)</h3>
+              <?php }
+              else{?>
+              <h3 align="center"><strong> Seleccione las promociones </strong>paso(3/4)</h3>
+             <?php } ?>
 
 
             <div class="container" id="contprincipal" style="margin-bottom:2%;min-width:200px;width:100%">
@@ -52,7 +57,6 @@
           <input type="submit" value="Atras" id="botonp2" style="float:left;"></a>
           <?php 
               if(empty($_SESSION["usuario"])){ ?>
-          ?>
           <a href="index.php?contenido=resep4">
           <input type="submit" value="Siguiente" id="botonp2" style="float:right;"></a>
           <?php }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-05-2016 a las 13:29:16
+-- Tiempo de generación: 22-05-2016 a las 00:04:27
 -- Versión del servidor: 10.1.8-MariaDB
 -- Versión de PHP: 5.5.30
 
@@ -55,8 +55,18 @@ CREATE TABLE `habitacion` (
   `nombre` varchar(50) NOT NULL,
   `descripcion` varchar(255) NOT NULL,
   `imagen` varchar(255) NOT NULL,
-  `precio` int(10) NOT NULL
+  `precio` int(10) NOT NULL,
+  `servicios` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `habitacion`
+--
+
+INSERT INTO `habitacion` (`id`, `nombre`, `descripcion`, `imagen`, `precio`, `servicios`) VALUES
+(1, 'Habitación doble estándar', 'Habitación doble con vistas a la montaña.Tiene dos dormitorios y un amplio salón. ', 'ini1.png', 230, 'Wi-fi,Aire Acondicionado'),
+(2, 'Habitación individual', 'Habitación individual con vistas a la montaña.Tiene un dormitorios y un amplio salón. ', 'ini2.png', 100, 'Wi-fi'),
+(3, 'Habitación suit estándar', 'Suit con vistas a la montaña.Tiene dos dormitorios y un amplio salón. ', 'ini1.png', 230, 'Wi-fi,Aire Acondicionado');
 
 -- --------------------------------------------------------
 
@@ -106,6 +116,18 @@ INSERT INTO `servicios` (`id`, `nombre`, `imagen`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `servicios_habitacion`
+--
+
+CREATE TABLE `servicios_habitacion` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(70) COLLATE utf16_spanish_ci NOT NULL,
+  `imagen` varchar(70) COLLATE utf16_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuario`
 --
 
@@ -148,6 +170,12 @@ ALTER TABLE `servicios`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `servicios_habitacion`
+--
+ALTER TABLE `servicios_habitacion`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
@@ -166,7 +194,7 @@ ALTER TABLE `comentario`
 -- AUTO_INCREMENT de la tabla `habitacion`
 --
 ALTER TABLE `habitacion`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `promociones`
 --
@@ -177,6 +205,11 @@ ALTER TABLE `promociones`
 --
 ALTER TABLE `servicios`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT de la tabla `servicios_habitacion`
+--
+ALTER TABLE `servicios_habitacion`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --

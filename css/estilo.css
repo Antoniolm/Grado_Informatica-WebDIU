@@ -41,13 +41,13 @@
 	width:100%;max-height:300px;
 }
 #lineasbus-taxi{
-	border-right:2px solid black;margin-top:2%;width:25%;float:left;margin-left:20%;
+	border-right:2px solid black;margin-top:2%;width:25%;min-width:200px;float:left;margin-left:20%;
 }
 #lineasbus-taxi ul {
 	font-size:16px;margin-right:5%;
 }
 #ofiscerca{
-	margin-top:2%;float:left;width:30%;
+	margin-top:2%;float:right;margin-right:25%;width:30%;min-width:200px;
 }
 #ofiscerca ul{
 	font-size:18px;

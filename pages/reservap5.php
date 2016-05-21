@@ -8,7 +8,12 @@
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Introduce los datos de pago</strong> paso(5/5)</h3>
+            <?php if(empty($_SESSION["usuario"])){ ?>
+              <h3 align="center"><strong> Introduce los datos de pago </strong>paso(5/5)</h3>
+              <?php }
+              else{?>
+              <h3 align="center"><strong> Introduce los datos de pago </strong>paso(4/4)</h3>
+            <?php } ?>
             <div class="container" style="padding-right:0px;padding-left:0px;margin-bottom:2%;min-width:200px;width:100%">
                     <form align="center" style="margin-left:4%">
                     <br><br>
@@ -37,8 +42,13 @@
                       <option value="2">2018</option>
                       <option value="3">2019</option>
                     </select>
-                    <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >C.V.C
+                    <input type="text" name="contrasena" style="margin-top:4%;margin-right:4%" >C.V.C<br>
+                    <input type="checkbox" name="contrasena" style="margin-top:3%;" >Si, he leido y acepto la siguiente <a>Política de privacidad</a>
+                    <p>*Este proceso de reserva no se realizara ningún cargo a la tarjeta, el pago del alojamiento se realizara en el propio hotel a la llegada</p>
                 </form>
+                    <p style="float:right;font-size:19px;margin-right:3%;">Precio Total</p><br><br>
+                    <p style="float:right;font-size:19px;margin-right:3%">XXX€</p><br><br>
+                    <p style="float:right;margin-right:3%">*Impuestos incluidos</p>
             </div>
           <?php 
           if(empty($_SESSION["usuario"])){ ?>

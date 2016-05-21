@@ -1,5 +1,8 @@
 ﻿<!--main-->
-
+<?php 
+  include 'conexionBD.php';
+  $result=$datos->Query("SELECT * FROM habitacion");
+?>
  <div class="well" id="cuerpo">
  <div class="container">
           <h1 align="center" style="margin-bottom:4%"> Habitaciones</h1>
@@ -28,63 +31,25 @@
                 </form>
             </div>          
             <div class="container" id="contelem">
-
+                <?php                
+                    while($fila=mysql_fetch_array($result)){  ?>
                 <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
+                  <a href="index.php" ><img src="images/<?php echo $fila['imagen'] ?>" alt="DreamGarden"></a>
                   <hr>
-                  <p>234€</p>
+                  <p align="center"><strong><?php echo $fila['nombre'] ?></strong> </p>
                   <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
+                  <p align="center" ><?php echo $fila['precio'] ?>€</p>
                   <hr>
+                  <p align="center"><Strong>Descripción</Strong></p>
+                  <p style="width: 100%"><?php echo $fila['descripcion'] ?></p>
+                  <hr>
+                  <p align="center"><Strong>Servicios</Strong></p>
+                  <p><?php echo $fila['servicios'] ?></p>
                   <form>
                     <input type="submit" value="Reservar"  size="6" style="float:right;margin-bottom:2%">                
                   </form>
                 </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Reservar"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Reservar"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Reservar"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
+                <?php }?>
             </div>
           </div>
 </div>

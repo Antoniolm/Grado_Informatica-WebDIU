@@ -1,11 +1,19 @@
 ﻿<!--main-->
-
+<?php 
+  include 'conexionBD.php';
+  $result=$datos->Query("SELECT * FROM habitacion");
+?>
  <div class="well" id="cuerpo">
  <div class="container" style="width:100%">
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Seleccione las habitaciones </strong>paso(2/4)</h3>
+            <?php if(empty($_SESSION["usuario"])){ ?>
+              <h3 align="center"><strong> Seleccione las habitaciones </strong>paso(2/5)</h3>
+            <?php }
+            else{?>
+              <h3 align="center"><strong> Seleccione las habitaciones </strong>paso(2/4)</h3>
+             <?php } ?>
 
 
             <div class="container" id="contprincipal" style="margin-bottom:2%;min-width:200px;width:100%">
@@ -33,63 +41,25 @@
                 </form>
             </div>          
             <div class="container" id="contelem">
-
+              <?php                
+                    while($fila=mysql_fetch_array($result)){  ?>
                 <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
+                  <a href="index.php" ><img src="images/<?php echo $fila['imagen'] ?>" alt="DreamGarden"></a>
                   <hr>
-                  <p>234€</p>
+                  <p align="center"><strong><?php echo $fila['nombre'] ?></strong> </p>
                   <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
+                  <p align="center" ><?php echo $fila['precio'] ?>€</p>
                   <hr>
+                  <p align="center"><Strong>Descripción</Strong></p>
+                  <p style="width: 100%"><?php echo $fila['descripcion'] ?></p>
+                  <hr>
+                  <p align="center"><Strong>Servicios</Strong></p>
+                  <p><?php echo $fila['servicios'] ?></p>
                   <form>
                     <input type="submit" value="Añadir"  size="6" style="float:right;margin-bottom:2%">                
                   </form>
                 </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Añadir"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Añadir"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
-                <div class="container" id="elemento" >
-                  <a href="index.php" ><img src="images/maps2.jpg" alt="DreamGarden"></a>
-                  <hr>
-                  <p>234€</p>
-                  <hr>
-                  <p style="width: 100%">Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción
-                   Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
-                  <hr>
-                  <form>
-                    <input type="submit" value="Añadir"  size="6" style="float:right;margin-bottom:2%">                
-                  </form>
-                </div>
+                <?php }?>
             </div>
           </div>
           <a href="index.php?contenido=reserva">

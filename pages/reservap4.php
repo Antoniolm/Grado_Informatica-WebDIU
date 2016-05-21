@@ -8,7 +8,7 @@
           <h1 align="center" style="margin-left:-20%;margin-bottom:2%"> Reserva</h1>
 
           <div class="container" style="float:left;margin-top:-2%;width:80%;min-width:290px">
-            <h3 align="center"><strong> Introduce tus datos personales </strong>paso(4/4)</h3>
+            <h3 align="center"><strong> Introduce tus datos personales </strong>paso(4/5)</h3>
             <div class="container" style="padding-right:0px;padding-left:0px;margin-bottom:2%;min-width:200px;width:100%">
                     <form style="margin-left:4%">
                     <br><br>Nombre:<input type="text" name="usuario" style="margin-right:4%" > 

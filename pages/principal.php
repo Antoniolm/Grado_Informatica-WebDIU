@@ -15,14 +15,14 @@
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/24h.png" data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+          <div class="item active" style="margin-left:32%;width:60%">
+            <img src="images/ini1.png" style="max-height:300px" data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
           </div>
-          <div class="item">
-            <img src="images/24h.png" data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+          <div class="item" style="margin-left:32%;width:60%">
+            <img src="images/ini2.png" style="max-height:300px" data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
           </div>
-          <div class="item">
-            <img src="images/24h.png" data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+          <div class="item" style="margin-left:32%;width:60%">
+            <img src="images/ini3.png" style="max-height:300px" data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
           </div>
         </div>
         <a class="left carousel-control" src="images/24h.png" href="#carousel-example-generic" role="button" data-slide="prev">

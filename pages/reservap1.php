@@ -4,7 +4,13 @@
  <div class="container">
           <h1 align="center" style="margin-bottom:2%"> Reserva</h1>
           <div class="container" style="margin-top:-2%">
-            <h3 align="center"><strong> Datos de la reserva </strong>paso(1/4)</h3>
+          <?php if(empty($_SESSION["usuario"])){ ?>
+          <h3 align="center"><strong> Datos de la reserva </strong>paso(1/5)</h3>
+          <?php }
+          else{?>
+          <h3 align="center"><strong> Datos de la reserva </strong>paso(1/4)</h3>
+          <?php } ?>
+            
             <form align="center" action="index.php?contenido=resep2" method="POST" style="margin-left:4%">
                 <br><br><strong>Fecha:</strong> <input type="date" name="usuario" style="margin-right:4%;margin-left:2%;height:20px" >
                 <input type="date" name="usuario" style="margin-right:4%;margin-left:2%;height:20px" ><br>

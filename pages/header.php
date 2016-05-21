@@ -19,8 +19,16 @@
   <div class="col-md-12">
         <div class="navbar-header">
             <a href="index.php?contenido=perfil" ><img src="images/logo.png" width="270" height="90" alt="DreamGarden" style="margin-top:5%"></a>
-      
+            
         </div>
+        <p style="margin-left:80%;margin-top:0.5%">Elegir idioma    <select style="margin-right: 4%">
+                  <option value="1" selected>España</option>
+                  <option value="2">Francia</option>
+                  <option value="3">Inglaterra</option>
+                  <option value="4">Japon</option>
+                  <option value="5">China</option>
+                  <option value="6">EEUU</option>
+                </select></p>
         <!-- Logeo -->
         <div class="container" id="login">
 
