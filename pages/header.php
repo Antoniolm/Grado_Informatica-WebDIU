@@ -22,12 +22,11 @@
             
         </div>
         <p style="margin-left:80%;margin-top:0.5%">Elegir idioma    <select style="margin-right: 4%">
-                  <option value="1" selected>España</option>
-                  <option value="2">Francia</option>
-                  <option value="3">Inglaterra</option>
-                  <option value="4">Japon</option>
-                  <option value="5">China</option>
-                  <option value="6">EEUU</option>
+                  <option value="1" selected>Español</option>
+                  <option value="2">Frances</option>
+                  <option value="3">Ingles</option>
+                  <option value="4">Ruso</option>
+                  <option value="5">Japones</option>
                 </select></p>
         <!-- Logeo -->
         <div class="container" id="login">

@@ -19,8 +19,8 @@
                 <h4 align="center">Ordenar</h4>
                 <form>
                   Nombre <input type="radio" name="filtro1" value="filtro1"><br>
-                  Mas baratos <input type="radio" name="filtro1" value="filtro1"><br>
-                  Mas caros <input type="radio" name="filtro1" value="filtro1"><br>
+                  Precio mas barato <input type="radio" name="filtro1" value="filtro1"><br>
+                  Precio mas caro <input type="radio" name="filtro1" value="filtro1"><br>
                 </form>
             </div>          
             <div class="container" id="contelem">

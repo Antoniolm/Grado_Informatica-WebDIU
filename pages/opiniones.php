@@ -17,6 +17,7 @@
                 <?php  } ?>
             </div>
           </div>
+            <?php if(!empty($_SESSION["usuario"])){ ?>
             <div class="container">
               <br><h4><strong>Añadir opinión</strong></h4>
               <form>
@@ -32,5 +33,6 @@
                   <input type="submit" value="Enviar comentario" style="margin-top:2%;height: 40px;font-size: 17px">
               </form>
             </div>
+            <?php } ?>
 </div>
 </div>
